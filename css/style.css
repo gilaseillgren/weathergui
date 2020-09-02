@@ -1,0 +1,72 @@
+
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.UserWeather {
+    background-color: #881f65;
+    height: 400px;
+    width: 95%;
+    max-width: 900px;
+    margin: 10vh auto 0 auto;
+    padding: 10px 20px;
+}
+
+.WeaterContainer {
+    position: relative;
+    height: 100%;
+    /*display: flex; /* or inline-flex */
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 40px;
+}
+.desc h1 {
+    position: absolute;
+    top: 50px;
+    left: 30%;
+    width: 200px;
+}
+.ws, .ps, .rain, .humid {
+    width: 25%;
+    position: absolute;
+    top: 170px;
+    text-align: center;
+    padding: 30px;
+}
+
+.ps {
+    left: 25%;
+}
+.rain {
+    left: 50%;
+}
+.humid {
+    left: 75%;
+}
+
+.geo {
+    position: absolute;
+    bottom: 30px;
+}
+
+.geo .location {
+    font-weight: bold;
+}
+
+.weatherTemp {
+    padding: 30px;
+    position: absolute;
+    width: 25%;
+    top: 36px;
+}
+.weatherTemp h1 {
+    display: inline;
+}
