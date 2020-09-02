@@ -17,14 +17,16 @@
     height: 375px;
     width: 95%;
     max-width: 900px;
-    margin: 10vh auto 0 auto;
+    margin: 15vh auto 0 auto;
     padding: 5px 10px;
+    -webkit-box-shadow: 0px 0px 21px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 21px -5px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 21px -5px rgba(0,0,0,0.75);
 }
 
 .WeaterContainer {
     position: relative;
     height: 100%;
-    /*display: flex; /* or inline-flex */
     border: 1px solid white;
     border-radius: 10px;
     padding: 40px;
@@ -58,6 +60,7 @@
     position: absolute;
     bottom: 30px;
     font-size: 1.2rem;
+    padding: 5px;
 }
 
 .geo .location {
@@ -75,6 +78,12 @@
 }
 
 @media screen and (max-width: 768px) {
+    .UserWeather {
+        font-size: 85%;
+    }
+    .geo {
+        font-size: 0.9rem;
+    }
     .desc h1 {
         left: inherit;
         right: 15%;
@@ -88,11 +97,11 @@
     }
     .rain {
         left: 0;
-        top: 300px;
+        top: 250px;
     }
     .humid {
         left: 50%;
-        top: 300px;
+        top: 250px;
     }
 
     .ws, .ps, .rain, .humid {
@@ -100,6 +109,11 @@
     }
 
     .UserWeather {
-        height: 525px;
+        height: 450px;
     }
   }
+  @media screen and (max-width: 405px) {
+      .UserWeather {
+          height: 480px;
+      }
+    }
